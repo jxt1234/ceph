@@ -1,8 +1,6 @@
 libmds_la_SOURCES = \
 	mds/Anchor.cc \
 	mds/Capability.cc \
-	mds/Dumper.cc \
-	mds/Resetter.cc \
 	mds/MDS.cc \
 	mds/flock.cc \
 	mds/locks.c \
@@ -27,8 +25,7 @@ libmds_la_SOURCES = \
 	mds/SnapServer.cc \
 	mds/snap.cc \
 	mds/SessionMap.cc \
-	mds/MDLog.cc \
-	mds/MDSUtility.cc
+	mds/MDLog.cc
 libmds_la_LIBADD = $(LIBOSDC)
 noinst_LTLIBRARIES += libmds.la
 
@@ -44,7 +41,6 @@ noinst_HEADERS += \
 	mds/CDir.h \
 	mds/CInode.h \
 	mds/Capability.h \
-	mds/Dumper.h \
 	mds/InoTable.h \
 	mds/LocalLock.h \
 	mds/Locker.h \
@@ -58,10 +54,8 @@ noinst_HEADERS += \
 	mds/MDSTable.h \
 	mds/MDSTableServer.h \
 	mds/MDSTableClient.h \
-	mds/MDSUtility.h \
 	mds/Mutation.h \
 	mds/Migrator.h \
-	mds/Resetter.h \
 	mds/ScatterLock.h \
 	mds/Server.h \
 	mds/SessionMap.h \
