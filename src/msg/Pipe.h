@@ -173,6 +173,7 @@ class DispatchQueue;
     utime_t backoff;         // backoff time
 
     bool reader_running, reader_needs_join;
+    bool reader_dispatching; /// reader thread is dispatching without pipe_lock
     bool writer_running;
 
     map<int, list<Message*> > out_q;  // priority queue for outbound msgs
